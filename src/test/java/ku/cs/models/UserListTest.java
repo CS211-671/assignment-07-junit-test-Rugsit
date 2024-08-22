@@ -44,9 +44,7 @@ class UserListTest {
     public void testUserListShouldReturnObjectIfUsernameAndPasswordIsCorrect() {
         // TODO: add 3 users to UserList
         // TODO: call login() with correct username and password
-        UserList userList = new UserList();
         User foundUser = userList.login("John Doe", "12345");
-        System.out.println(foundUser);
         // TODO: assert that User object is found
         assertNotEquals(null, foundUser);
     }
