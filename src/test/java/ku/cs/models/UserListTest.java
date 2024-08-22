@@ -57,7 +57,7 @@ class UserListTest {
             UserList userList = new UserList();
             User foundUser = userList.login("John Doe", "1345");
         // TODO: assert that the method return null
-            assertEquals(null, foundUser);
+        assertNull(foundUser);
     }
 
 }

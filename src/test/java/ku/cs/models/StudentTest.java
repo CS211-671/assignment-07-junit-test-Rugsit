@@ -9,7 +9,7 @@ class StudentTest {
     Student s1;
     @BeforeEach
     void setUp() {
-        s1 = new Student("6xxxxxxxxx", "kong");
+        s1 = new Student("6610402205", "kong");
     }
     @Test
     void testAddScore() {
@@ -27,8 +27,8 @@ class StudentTest {
 
     @Test
     void testIsId() {
-        s1.isId("6xxxxxxxxx");
-        assertEquals(true, s1.isId("6xxxxxxxxx"));
+        s1.isId("6610402205");
+        assertEquals(true, s1.isId("6610402205"));
     }
 
     @Test
