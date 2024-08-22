@@ -17,6 +17,20 @@ class UserTest {
     }
 
     @Test
+    void testSetPassword() {
+        User user = new User("user01", "plain-p@ssw0rd");
+        user.setPassword("new-p@ssw0rd");
+        assertTrue(user.validatePassword("new-p@ssw0rd"));
+    }
+
+    @Test
+    void testIsUserName() {
+        User user = new User("user01", "plain-p@ssw0rd");
+        boolean actual = user.isUsername("user01");
+        assertTrue(actual);
+    }
+
+    @Test
     @DisplayName("Password should be verified by plain text")
     public void testPasswordShouldBeVerified() {
         User user = new User("user01", "plain-p@ssw0rd");
