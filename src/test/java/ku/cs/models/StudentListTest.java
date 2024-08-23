@@ -19,6 +19,8 @@ class StudentListTest {
     void testAddStudent() {
         studentList.addNewStudent("6610402205", "Nest");
         assertNotNull(studentList.findStudentById("6610402205"));
+        studentList.addNewStudent("6610402132", "Bright", 80);
+        assertNotNull(studentList.findStudentById("6610402132"));
     }
 
     @Test
